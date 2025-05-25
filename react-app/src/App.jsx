@@ -9,13 +9,31 @@ import Footer from './Components/Footer/Footer'
 
 function App() {
   
+function hello1(e){
+  console.log("hello1",e.target)
+}
+const hello2 = (e)=>{
+  console.log("hello2",e)
 
+}
+
+function hello3(name,e){
+  console.log("hello3 " + name,e)
+}
+
+const hello4 = (name)=>{
+  console.log("hello4 " +name  )
+
+}
   return (
     <>
       
       <Header/>
       <Body>
-        <button>click here</button>
+        <button onClick={hello1}>click1</button>
+        <button onClick={hello2}>click 2</button>
+        <button onClick={(e)=> {hello3("malindu",e)}}>click 3</button>
+        <button onClick={()=> {hello4("thARKA")}}>click 3</button>
       </Body>
       <Body>
 
