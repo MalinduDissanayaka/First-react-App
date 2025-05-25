@@ -1,0 +1,9 @@
+#header {
+  min-height: 10vh;
+  background-color: #312e2e;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Pushes logo left and MenuLink right */
+  padding: 0 20px;
+}
