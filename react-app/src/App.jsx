@@ -27,9 +27,7 @@ function App() {
             in a few games, did so tonight. Plan was to go straight on this ground. I got my trajectory better, didn't take on too many fielders. Pleased with that. I worked a lot on judging length, it's getting me out a couple of times, so I've had to work 
           on it in the nets a lot. After the powerplay is when I'd ideally go, but I get paid to do well whenever I go in.</p>
       </Body>
-      <Body>
-        <button>click here</button>
-      </Body>
+      
       
     </>
     
