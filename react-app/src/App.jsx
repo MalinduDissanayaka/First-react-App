@@ -27,6 +27,18 @@ const hello4 = (name)=>{
 }
 
 const  sty={fontSize:30,background:'#c4f0ea' }
+
+
+const [num1,setnum1]=useState(0);
+
+function onclickhadle() {
+
+  setnum1 (num1 +1)
+}
+function onclickhadle2() {
+
+  setnum1 (num1 - 1)
+}
   return (
     <>
       
@@ -36,6 +48,9 @@ const  sty={fontSize:30,background:'#c4f0ea' }
         <button onClick={hello2}>click 2</button>
         <button onClick={(e)=> {hello3("malindu",e)}}>click 3</button>
         <button onClick={()=> {hello4("thARKA")}}>click 3</button>
+        <button onClick={onclickhadle}>+</button>
+        <button onClick={onclickhadle2}>-</button>
+        <p>{num1}</p>
       </Body>
       <Body>
 
