@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import './Components/Body/Body.css'
 import Header from './Components/Header/Header'
 import Body from './Components/Body/Body'
 import Footer from './Components/Footer/Footer'
@@ -25,6 +25,8 @@ const hello4 = (name)=>{
   console.log("hello4 " +name  )
 
 }
+
+const  sty={fontSize:30,background:'#c4f0ea' }
   return (
     <>
       
@@ -37,7 +39,7 @@ const hello4 = (name)=>{
       </Body>
       <Body>
 
-        <p>Heinrich Klaasen, POTM: The franchise spends a
+        <p style={sty}>Heinrich Klaasen, POTM: The franchise spends a
            lot of money on this. We had a bad start and 
            middle, we fought to turn it around in the last 
            three games. Nice to give something back to them. 
