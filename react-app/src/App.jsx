@@ -7,6 +7,8 @@ import Header from "./Components/Header/Header";
 import Body from "./Components/Body/Body";
 import Footer from "./Components/Footer/Footer";
 
+
+
 function App() {
   function hello1(e) {
     console.log("hello1", e.target);
@@ -98,14 +100,20 @@ function App() {
         <ul>
           {products.map((product) => (
             <li key={product.id}>
-              
-              {product.title} <img style={{"width":"100px", "display":"block"}} src={product.image} alt="prodcut image" />
-              <br/>
+              {product.title}{" "}
+              <img
+                style={{ width: "100px", display: "block" }}
+                src={product.image}
+                alt="prodcut image"
+              />
+              <br />
               price : {product.price}
             </li>
           ))}
         </ul>
       </Body>
+      <h1 className="bg-gray-700">My Name</h1>
+      <h1 className="text-amber-900">My Age</h1>
     </>
   );
 }
